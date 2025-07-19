@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guests of HugoCast on Concrete and Clouds</title>
+    <title>Guests of HugoCast on Concrete and Clouds.</title>
     <link>http://localhost:1313/guest/</link>
-    <description>Recent content in Guests of HugoCast on Concrete and Clouds</description>
+    <description>Recent content in Guests of HugoCast on Concrete and Clouds.</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 10 Feb 2020 09:12:39 -0500</lastBuildDate>

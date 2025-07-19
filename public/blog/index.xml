@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Concrete and Clouds</title>
+    <title>Blogs on Concrete and Clouds.</title>
     <link>http://localhost:1313/blog/</link>
-    <description>Recent blogs in Blogs on Concrete and Clouds</description>
+    <description>Recent blogs in Blogs on Concrete and Clouds.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 01 Dec 2020 13:33:18 -0600</lastBuildDate>

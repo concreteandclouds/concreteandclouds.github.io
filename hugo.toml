@@ -1,6 +1,6 @@
 baseURL = "https://concreteandclouds.github.io/"
 languageCode = "en-gb"
-title = "Concrete and Clouds"
+title = "Concrete and Clouds."
 theme = "castanet"
 googleAnalytics = ""
 themesdir = "themes"

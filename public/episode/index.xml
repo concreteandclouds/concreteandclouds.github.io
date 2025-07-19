@@ -10,7 +10,7 @@
      xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
     >
   <channel>
-    <title>Concrete and Clouds</title>
+    <title>Concrete and Clouds.</title>
     <atom:link href="http://localhost:1313/episode/index.xml" rel="self" type="application/rss+xml" />
     <link>http://localhost:1313/</link>
     <description>The HugoCast is the best podcast you&#39;ve ever seen. You will learn everything you ever needed to know about podcasting from the most inspiring experts to ever show up on the whole internet.</description>
@@ -34,7 +34,7 @@
     <googleplay:image href="https://www.arresteddevops.com/img/ado-podcast-logo.png"></googleplay:image>
     <image>
       <url>https://www.arresteddevops.com/img/ado-podcast-logo.png</url>
-      <title>Concrete and Clouds</title>
+      <title>Concrete and Clouds.</title>
       <link>http://localhost:1313/</link>
     </image>
     <itunes:category text="Technology">
