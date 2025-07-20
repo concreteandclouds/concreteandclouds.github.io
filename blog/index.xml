@@ -1,46 +1,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Concrete and Clouds</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent blogs in Blogs on Concrete and Clouds</description>
+    <title>Blogs on Concrete and Clouds.</title>
+    <link>https://concreteandclouds.github.io/blog/</link>
+    <description>Recent blogs in Blogs on Concrete and Clouds.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 01 Dec 2020 13:33:18 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/" rel="self" type="application/rss+xml" />
+    <atom:link href="https://concreteandclouds.github.io/blog/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My fourth blog</title>
-      <link>http://localhost:1313/blog/my-fourth-blog/</link>
+      <link>https://concreteandclouds.github.io/blog/my-fourth-blog/</link>
       <pubDate>Tue, 01 Dec 2020 13:33:18 -0600</pubDate>
       
-      <guid>http://localhost:1313/blog/my-fourth-blog/</guid>
+      <guid>https://concreteandclouds.github.io/blog/my-fourth-blog/</guid>
       <description>&amp;lt;p&amp;gt;YOLO keytar scenester, williamsburg etsy mlkshk neutra hexagon photo booth church-key messenger bag. Lyft small batch enamel pin, bicycle rights la croix migas chartreuse ramps microdosing authentic pickled gochujang kombucha. Wolf vaporware stumptown, glossier vinyl everyday carry organic. Subway tile af tumblr listicle photo booth meh trust fund tote bag. Post-ironic gentrify direct trade blue bottle, fingerstache master cleanse butcher. Succulents ethical leggings hexagon vexillologist migas you probably haven&amp;amp;rsquo;t heard of them keytar sustainable church-key viral salvia hell of kinfolk. Lumbersexual taiyaki la croix literally man bun, truffaut mustache godard edison bulb artisan keytar jianbing air plant swag polaroid.&amp;lt;/p&amp;gt;</description>
     </item>
     
     <item>
       <title>My third blog</title>
-      <link>http://localhost:1313/blog/my-third-blog/</link>
+      <link>https://concreteandclouds.github.io/blog/my-third-blog/</link>
       <pubDate>Sat, 21 Nov 2020 13:33:18 -0600</pubDate>
       
-      <guid>http://localhost:1313/blog/my-third-blog/</guid>
+      <guid>https://concreteandclouds.github.io/blog/my-third-blog/</guid>
       <description>&amp;lt;p&amp;gt;YOLO keytar scenester, williamsburg etsy mlkshk neutra hexagon photo booth church-key messenger bag. Lyft small batch enamel pin, bicycle rights la croix migas chartreuse ramps microdosing authentic pickled gochujang kombucha. Wolf vaporware stumptown, glossier vinyl everyday carry organic. Subway tile af tumblr listicle photo booth meh trust fund tote bag. Post-ironic gentrify direct trade blue bottle, fingerstache master cleanse butcher. Succulents ethical leggings hexagon vexillologist migas you probably haven&amp;amp;rsquo;t heard of them keytar sustainable church-key viral salvia hell of kinfolk. Lumbersexual taiyaki la croix literally man bun, truffaut mustache godard edison bulb artisan keytar jianbing air plant swag polaroid.&amp;lt;/p&amp;gt;</description>
     </item>
     
     <item>
       <title>My second blog</title>
-      <link>http://localhost:1313/blog/my-second-blog/</link>
+      <link>https://concreteandclouds.github.io/blog/my-second-blog/</link>
       <pubDate>Thu, 12 Nov 2020 13:33:18 -0600</pubDate>
       
-      <guid>http://localhost:1313/blog/my-second-blog/</guid>
+      <guid>https://concreteandclouds.github.io/blog/my-second-blog/</guid>
       <description>&amp;lt;p&amp;gt;YOLO keytar scenester, williamsburg etsy mlkshk neutra hexagon photo booth church-key messenger bag. Lyft small batch enamel pin, bicycle rights la croix migas chartreuse ramps microdosing authentic pickled gochujang kombucha. Wolf vaporware stumptown, glossier vinyl everyday carry organic. Subway tile af tumblr listicle photo booth meh trust fund tote bag. Post-ironic gentrify direct trade blue bottle, fingerstache master cleanse butcher. Succulents ethical leggings hexagon vexillologist migas you probably haven&amp;amp;rsquo;t heard of them keytar sustainable church-key viral salvia hell of kinfolk. Lumbersexual taiyaki la croix literally man bun, truffaut mustache godard edison bulb artisan keytar jianbing air plant swag polaroid.&amp;lt;/p&amp;gt;</description>
     </item>
     
     <item>
       <title>My First Blog</title>
-      <link>http://localhost:1313/blog/my-first-blog/</link>
+      <link>https://concreteandclouds.github.io/blog/my-first-blog/</link>
       <pubDate>Sun, 01 Nov 2020 13:27:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/blog/my-first-blog/</guid>
+      <guid>https://concreteandclouds.github.io/blog/my-first-blog/</guid>
       <description>&amp;lt;p&amp;gt;YOLO keytar scenester, williamsburg etsy mlkshk neutra hexagon photo booth church-key messenger bag. Lyft small batch enamel pin, bicycle rights la croix migas chartreuse ramps microdosing authentic pickled gochujang kombucha. Wolf vaporware stumptown, glossier vinyl everyday carry organic. Subway tile af tumblr listicle photo booth meh trust fund tote bag. Post-ironic gentrify direct trade blue bottle, fingerstache master cleanse butcher. Succulents ethical leggings hexagon vexillologist migas you probably haven&amp;amp;rsquo;t heard of them keytar sustainable church-key viral salvia hell of kinfolk. Lumbersexual taiyaki la croix literally man bun, truffaut mustache godard edison bulb artisan keytar jianbing air plant swag polaroid.&amp;lt;/p&amp;gt;</description>
     </item>
     
