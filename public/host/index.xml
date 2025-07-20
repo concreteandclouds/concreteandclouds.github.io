@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hosts of HugoCast on Concrete and Clouds.</title>
-    <link>http://localhost:1313/host/</link>
+    <link>https://concreteandclouds.github.io/host/</link>
     <description>Recent content in Hosts of HugoCast on Concrete and Clouds.</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 08 Dec 2016 20:55:58 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/host/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://concreteandclouds.github.io/host/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bridget Kromhout</title>
-      <link>http://localhost:1313/host/bkromhout/</link>
+      <link>https://concreteandclouds.github.io/host/bkromhout/</link>
       <pubDate>Thu, 08 Dec 2016 20:55:58 -0600</pubDate>
-      <guid>http://localhost:1313/host/bkromhout/</guid>
+      <guid>https://concreteandclouds.github.io/host/bkromhout/</guid>
       <description>&lt;p&gt;Bridget Kromhout is a Principal Cloud Developer Advocate at Microsoft. Her CS degree emphasis was in theory, but she now deals with the concrete (if &amp;ldquo;cloud&amp;rdquo; can be considered tangible). After 15 years as an operations engineer, she traded being on call for being on a plane. A frequent speaker and program committee member for tech conferences, she leads the devopsdays organization globally and the devops community at home in Minneapolis. She podcasts with Arrested DevOps, blogs at &lt;a href=&#34;bridgetkromhout.com&#34;&gt;http://bridgetkromhout.com&lt;/a&gt;, and is active in a Twitterverse near you.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Matt Stratton</title>
-      <link>http://localhost:1313/host/mstratton/</link>
+      <link>https://concreteandclouds.github.io/host/mstratton/</link>
       <pubDate>Thu, 08 Dec 2016 20:55:58 -0600</pubDate>
-      <guid>http://localhost:1313/host/mstratton/</guid>
+      <guid>https://concreteandclouds.github.io/host/mstratton/</guid>
       <description>&lt;p&gt;Matt Stratton is a solutions architect at Chef, where he demonstrates how Chef’s automation platform provides speed and flexibility to clients’ infrastructure. He is devoted to concepts like Continuous Delivery and Infrastructure as Code, and his license plate actually says “DevOps”. He lives in Chicago and has an unhealthy obsession with Doctor Who, Firefly, and Game of Thrones. And whiskey.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trevor Hess</title>
-      <link>http://localhost:1313/host/thess/</link>
+      <link>https://concreteandclouds.github.io/host/thess/</link>
       <pubDate>Thu, 08 Dec 2016 20:55:58 -0600</pubDate>
-      <guid>http://localhost:1313/host/thess/</guid>
+      <guid>https://concreteandclouds.github.io/host/thess/</guid>
       <description>&lt;p&gt;Trevor Hess is a Partner Solution Architect focusing on Microsoft at &lt;a href=&#34;https://www.chef.io/&#34;&gt;Chef Software&lt;/a&gt;, working with Microsoft to ensure that Chef is delighting customers and prospects on Windows and the many parts inside Azure!&lt;/p&gt;&#xA;&lt;p&gt;Coming from a background in .NET Software Development and consulting, he has worked with several large multinational organizations to help kick start their journey to the cloud and the world of DevOps practices and principals. He is excited to engage in new experiences, and learning opportunities.&lt;/p&gt;</description>
     </item>
   </channel>

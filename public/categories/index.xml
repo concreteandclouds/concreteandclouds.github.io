@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Concrete and Clouds.</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://concreteandclouds.github.io/categories/</link>
     <description>Recent content in Categories on Concrete and Clouds.</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 12 Nov 2020 13:33:18 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://concreteandclouds.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevOps</title>
-      <link>http://localhost:1313/categories/devops/</link>
+      <link>https://concreteandclouds.github.io/categories/devops/</link>
       <pubDate>Thu, 12 Nov 2020 13:33:18 -0600</pubDate>
-      <guid>http://localhost:1313/categories/devops/</guid>
+      <guid>https://concreteandclouds.github.io/categories/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Release</title>
-      <link>http://localhost:1313/categories/release/</link>
+      <link>https://concreteandclouds.github.io/categories/release/</link>
       <pubDate>Thu, 12 Nov 2020 13:33:18 -0600</pubDate>
-      <guid>http://localhost:1313/categories/release/</guid>
+      <guid>https://concreteandclouds.github.io/categories/release/</guid>
       <description></description>
     </item>
     <item>
       <title>Deployment</title>
-      <link>http://localhost:1313/categories/deployment/</link>
+      <link>https://concreteandclouds.github.io/categories/deployment/</link>
       <pubDate>Sun, 01 Nov 2020 13:27:00 -0600</pubDate>
-      <guid>http://localhost:1313/categories/deployment/</guid>
+      <guid>https://concreteandclouds.github.io/categories/deployment/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual Reality</title>
-      <link>http://localhost:1313/categories/virtual-reality/</link>
+      <link>https://concreteandclouds.github.io/categories/virtual-reality/</link>
       <pubDate>Thu, 25 Aug 2016 04:09:58 -0500</pubDate>
-      <guid>http://localhost:1313/categories/virtual-reality/</guid>
+      <guid>https://concreteandclouds.github.io/categories/virtual-reality/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud Technology</title>
-      <link>http://localhost:1313/categories/cloud-technology/</link>
+      <link>https://concreteandclouds.github.io/categories/cloud-technology/</link>
       <pubDate>Mon, 25 Jul 2016 04:09:54 -0500</pubDate>
-      <guid>http://localhost:1313/categories/cloud-technology/</guid>
+      <guid>https://concreteandclouds.github.io/categories/cloud-technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Politics</title>
-      <link>http://localhost:1313/categories/politics/</link>
+      <link>https://concreteandclouds.github.io/categories/politics/</link>
       <pubDate>Thu, 25 Feb 2016 04:08:20 -0500</pubDate>
-      <guid>http://localhost:1313/categories/politics/</guid>
+      <guid>https://concreteandclouds.github.io/categories/politics/</guid>
       <description></description>
     </item>
   </channel>
