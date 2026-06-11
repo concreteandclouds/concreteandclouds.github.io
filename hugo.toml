@@ -17,9 +17,9 @@ buildFuture = true
   tag = "tags"
 
 [permalinks]
-	# page = "/:filename/"
-	about = "/:filename/"
-	episode = "/:filename/"
+# page = "/:contentbasename/"
+about = "/:contentbasename/"
+  episode = "/:contentbasename/"
 
 
 # The theme supports menus with up to one submenu per menu item
@@ -155,11 +155,11 @@ disqusShortname = ""
     # threads = ""
 
   [params.authors]
-    [params.authors.Mark]
-      name	= "Mark Beachill"
+   # [params.authors.Mark]
+     # name	= "Mark Beachill"
       # thumbnail = "img/host/mark.png" # Upload a photo of yourself to static/img/host/ and name it mark.png
-      bio = "Host of Concrete and Clouds."
-      [params.authors.Mark.social]
+      # bio = "Host of Concrete and Clouds."
+     # [params.authors.Mark.social]
         # twitter = ""
         # linkedin = ""
 
