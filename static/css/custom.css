@@ -1,27 +1,26 @@
 /* ==========================================================================
-   Concrete and Clouds — custom.css
+   Concrete and Clouds — custom.css  (v2)
    Overrides for the Castanet "grey" theme.
-   Put this file at:  static/css/custom.css   (in YOUR site, not the theme)
-   Enable in config:  custom_css = ["css/custom.css"]  under [params]
+   Location: static/css/custom.css   |   config: custom_css = ["css/custom.css"]
+   v2 changes: homepage episode-list fixes (white titles, stray rules),
+   sidebar reduced to a single Subscribe card, latest-episode hero styling.
    ========================================================================== */
 
 /* ---- Fonts ----------------------------------------------------------- */
-/* Newsreader = editorial serif for titles; Inter = clean body sans.
-   Swap "Newsreader" for "Fraunces" or "Source Serif 4" if you prefer. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap');
 
 :root {
-  --cc-bg:        #faf9f7;   /* warm off-white page background */
+  --cc-bg:        #faf9f7;
   --cc-surface:   #ffffff;
-  --cc-ink:       #1f2125;   /* near-black text */
-  --cc-muted:     #6b6f76;   /* secondary text */
-  --cc-line:      #e6e3de;   /* hairline borders */
-  --cc-accent:    #2a2d34;   /* the theme's brand grey, kept for links */
+  --cc-ink:       #1f2125;
+  --cc-muted:     #6b6f76;
+  --cc-line:      #e6e3de;
+  --cc-accent:    #2a2d34;
   --cc-serif:     'Newsreader', Georgia, serif;
   --cc-sans:      'Inter', -apple-system, 'Segoe UI', sans-serif;
 }
 
-/* ---- Page shell: kill the grey-box-in-grey-box look ------------------ */
+/* ---- Page shell -------------------------------------------------------- */
 body {
   background: var(--cc-bg) !important;
   font-family: var(--cc-sans);
@@ -31,27 +30,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* The white content panel — narrow it to a readable column, add air */
 .container.middle_container {
-  background: transparent;        /* let the page bg show; no boxed panel */
-  max-width: 780px;
-  padding: 7rem 1.5rem 4rem;      /* top padding clears the fixed navbar */
+  background: transparent;
+  max-width: 860px;               /* a touch wider to fit list + sidebar */
+  padding: 7rem 1.5rem 4rem;
 }
 
-/* Homepage uses .main_container (mid-grey #BCBDC0) — soften it */
 .main_container,
 .hero_container {
   background: transparent !important;
 }
 
-/* ---- Navigation ------------------------------------------------------- */
+/* ---- Navigation -------------------------------------------------------- */
 .navbar.fixed-top {
-  background: rgba(250, 249, 247, 0.92) !important;  /* matches page bg */
-  backdrop-filter: blur(8px);
+  background: #faf9f7 !important;  /* solid, so nothing shows through */
   border-bottom: 1px solid var(--cc-line);
   box-shadow: none;
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
+  z-index: 1050;
 }
 
 .navbar-brand {
@@ -84,43 +81,22 @@ body {
   font-size: 0.9rem;
 }
 
-/* ---- Episode page typography (the Podbean feel) ----------------------- */
-h1 {
-  font-family: var(--cc-serif);
-  font-weight: 700;
-  font-size: clamp(2.1rem, 5vw, 3.1rem);
-  line-height: 1.12;
-  letter-spacing: -0.015em;
-  margin: 1.5rem 0 0.75rem;
-}
-
-h2, h3, h4 {
+/* ---- Typography --------------------------------------------------------- */
+h1, h2, h3, h4 {
   font-family: var(--cc-serif);
   font-weight: 700;
   letter-spacing: -0.01em;
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
 }
 
-h2 { font-size: 1.6rem; }
-
-/* "Posted on …" line — small, quiet, spaced like a kicker */
-h1 + small,
-small {
-  display: block;
-  font-family: var(--cc-sans);
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--cc-muted);
-  margin-bottom: 2rem;
+h1 {
+  font-size: clamp(2.1rem, 5vw, 3.1rem);
+  line-height: 1.12;
+  margin: 1.5rem 0 0.75rem;
 }
 
 p {
   font-size: 1.06rem;
   line-height: 1.75;
-  margin-bottom: 1.25rem;
 }
 
 a {
@@ -135,13 +111,161 @@ a:hover {
   text-decoration-color: var(--cc-ink);
 }
 
-/* ---- Player & episode media ------------------------------------------- */
+small {
+  display: block;
+  font-family: var(--cc-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cc-muted);
+}
+
+/* Episode page: extra room under the "Posted on" line */
+h1 + small {
+  margin-bottom: 2rem;
+}
+
+/* =========================================================================
+   HOMEPAGE
+   ========================================================================= */
+
+/* "Latest Episode" label → small kicker above the hero title */
+.hero_container > div > h2 {
+  font-family: var(--cc-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cc-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Hero (latest) episode title — big and serif */
+.hero_container .homepage_episode_row h2 {
+  font-family: var(--cc-serif);
+  font-size: clamp(1.9rem, 4.5vw, 2.7rem);
+  line-height: 1.15;
+  text-transform: none;
+  letter-spacing: -0.015em;
+}
+
+.row_latest_episode_title,
+.row_latest_episode_title:hover {
+  color: var(--cc-ink) !important;
+  text-decoration: none;
+}
+
+/* FIX: older-episode titles were white-on-white (theme reuses a
+   grid-layout class). Force them to ink. */
+.grid_episode_title,
+.grid_episode_title > h3,
+h3 > a.grid_episode_title {
+  color: var(--cc-ink) !important;
+}
+
+.grid_episode_title:hover {
+  color: var(--cc-accent) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--cc-line);
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+/* FIX: stray horizontal lines. Each episode = two stacked rows, so no
+   blanket borders. Tighten the rows, then draw ONE separator above each
+   episode title block only. */
+.homepage_episode_row,
+.homepage_episode_row_first {
+  padding: 0.25rem 0;
+  border: none;
+}
+
+.main_container .homepage_episode_row:has(h3) {
+  border-top: 1px solid var(--cc-line);
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+}
+
+/* date lines inside the list shouldn't push huge gaps */
+.homepage_episode_row small {
+  margin-bottom: 0.25rem;
+}
+
+.homepage_thumbnail,
+.homepage_episode_row img {
+  border-radius: 10px;
+}
+
+/* =========================================================================
+   SIDEBAR — keep ONLY the Subscribe card, hide Links / About / Hosts
+   (CSS quick fix; see notes for the cleaner partial-override method)
+   ========================================================================= */
+.sidebar_col > .row + .row {
+  display: none;
+}
+
+.sidebar_col {
+  padding: 0 0 0 2rem !important;   /* theme adds 40px everywhere */
+}
+
+.sidebar_general {
+  background: var(--cc-surface) !important;
+  border: 1px solid var(--cc-line);
+  border-radius: 12px;
+  padding: 1.25rem !important;
+}
+
+.sidebar_headline {
+  color: var(--cc-ink) !important;
+  font-family: var(--cc-serif) !important;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Subscribe links: clean vertical list of full-width buttons */
+.subscribe_buttons {
+  padding: 0 !important;
+}
+
+.subscribe_buttons .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--cc-surface);
+  border: 1px solid var(--cc-line);
+  border-radius: 8px;
+  color: var(--cc-ink);
+  font-family: var(--cc-sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.55rem 0.9rem;
+  margin: 0 0 0.5rem 0;
+  text-decoration: none;
+}
+
+.subscribe_buttons .btn:hover {
+  background: var(--cc-ink);
+  border-color: var(--cc-ink);
+  color: #fff;
+}
+
+.sidebar_content {
+  background: transparent;
+  padding: 0;
+}
+
+/* =========================================================================
+   EPISODE PAGE
+   ========================================================================= */
 .player_row {
   margin: 2rem 0 2.5rem;
 }
 
 audio {
-  border-radius: 999px;           /* rounded pill, like Podbean's player */
+  border-radius: 999px;
 }
 
 .episode_image {
@@ -150,14 +274,13 @@ audio {
   margin-bottom: 1.5rem;
 }
 
-/* ---- Prev / Next pagination ------------------------------------------- */
+/* Prev / Next pagination */
 .pagination {
   margin: 3rem 0 1rem;
   gap: 0.5rem;
 }
 
-.page-link,
-.pagination .page-link {
+.page-link {
   border: 1px solid var(--cc-line);
   border-radius: 999px;
   background: var(--cc-surface);
@@ -174,35 +297,7 @@ audio {
   color: #fff;
 }
 
-/* ---- Homepage episode list -------------------------------------------- */
-.homepage_episode_row,
-.homepage_episode_row_first {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--cc-line);
-}
-
-.homepage_thumbnail {
-  border-radius: 10px;
-}
-
-.row_latest_episode_title > h3 {
-  font-family: var(--cc-serif);
-}
-
-/* Dark sidebar block → light card */
-.sidebar_general {
-  background: var(--cc-surface) !important;
-  border: 1px solid var(--cc-line);
-  border-radius: 12px;
-  padding: 1.25rem !important;
-}
-
-.sidebar_headline {
-  color: var(--cc-ink) !important;
-  font-family: var(--cc-serif) !important;
-}
-
-/* "Up next" banner: quieter */
+/* "Up next" banner */
 .up_next_container {
   background: var(--cc-surface) !important;
   color: var(--cc-ink) !important;
@@ -239,5 +334,9 @@ audio {
     background: var(--cc-bg);
     border-radius: 0 0 12px 12px;
     padding: 0.5rem 0 1rem;
+  }
+
+  .sidebar_col {
+    padding: 2rem 0 0 0 !important;
   }
 }
