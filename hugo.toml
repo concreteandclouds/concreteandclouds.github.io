@@ -105,7 +105,7 @@ disqusShortname = ""
 
 
 # ... other settings
-  relativeURLs = true
+  relativeURLs = false
 
 
   # If you want to use fathom(https://usefathom.com) for analytics, add this section
