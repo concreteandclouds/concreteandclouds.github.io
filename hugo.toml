@@ -102,6 +102,12 @@ spotify_subscribe = "https://open.spotify.com/show/0" # Ensure you replace the '
 description = "Discussing politics and society by bringing the real and the abstract together."
 # media_prefix = "" 
 disqusShortname = ""
+
+
+# ... other settings
+  relativeURLs = true
+
+
   # If you want to use fathom(https://usefathom.com) for analytics, add this section
   [params.fathomAnalytics]
     siteID = "ABCDE"
