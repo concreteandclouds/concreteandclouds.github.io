@@ -1,0 +1,59 @@
+name: Deploy Hugo site to Pages
+
+# This tells GitHub to run the action every time you push to the 'main' branch
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Sets permissions so the robot can actually publish the site
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevents multiple builds from running at the exact same time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # JOB 1: Build the site
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive # Crucial for fetching the Castanet theme
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build with Hugo
+        run: hugo --minify
+
+      - name: Upload generated site as artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # JOB 2: Deploy the site to GitHub Pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
