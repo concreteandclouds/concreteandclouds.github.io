@@ -31,49 +31,10 @@ about = "/:contentbasename/"
     url = "/about"
 
 [[Menu.Main]]
-    name = "Contact"
-    identifier = "contact"
-    url = "/contact"
-
-[[Menu.Main]]
-    name = "Hosts"
-    identifier = "hosts"
-    url = "/host"
-
-[[Menu.Main]]
-    name = "Guests"
-    identifier = "guests"
-    url = "/guest"
-
-[[Menu.Main]]
-    name = "Upcoming Episodes"
-    identifier = "upcoming"
-    url = "/upcoming"
-
-[[Menu.Main]]
-    name = "Blog"
-    identifier = "blog"
-    url = "/blog"
-
-[[Menu.Main]]
-    name = "Resources"
-    identifier = "resources"
-    url = "#!"
-
-[[Menu.Main]]
-    name = "Books"
-    identifier = "books"
-    url = "/books"
-    parent = "resources"
-[[Menu.Main]]
     name = "Podcasts"
     identifier = "podcasts"
     url = "/books"
     parent = "resources"
-[[Menu.Main]]
-    name = "Internet"
-    identifier = "internet"
-    url = "https://www.google.com"
 
 [params]
 googleAnalytics_UA = ""
@@ -102,7 +63,7 @@ spotify_subscribe = "https://open.spotify.com/show/0" # Ensure you replace the '
 description = "Discussing politics and society by bringing the real and the abstract together."
 # media_prefix = "" 
 disqusShortname = ""
-
+custom_css = ["css/custom.css"]
 
 # ... other settings
   relativeURLs = false
