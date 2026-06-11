@@ -1,11 +1,15 @@
 baseURL = "https://concreteandclouds.github.io/"
-languageCode = "en-gb"
+locale = "en-gb"
 title = "Concrete and Clouds"
 theme = "castanet"
 googleAnalytics = ""
 themesdir = "themes"
 pagination.pagerSize = "9"
 buildFuture = true
+
+[author]
+  name = "Mark Beachill"
+  email = "markbeachill@gmail.com" # Put your actual email here!
 
 [taxonomies]
   category = "categories"
