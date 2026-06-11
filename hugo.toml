@@ -1,20 +1,3 @@
-This is exactly what I needed. I can see all the placeholder data that was left behind.
-
-Here is the fully updated `hugo.toml` file, customized with the Podbean information you provided earlier.
-
-### What I Changed:
-
-1. **Site Identity:** Updated the title, descriptions, and copyright to "Concrete and Clouds" and Mark Beachill.
-2. **Subscribe Links:** Replaced the Arrested DevOps links with your actual Apple Podcasts, Spotify, and Amazon Music links from Podbean. (I commented out the others, like Stitcher and SoundCloud, since you aren't using them yet).
-3. **iTunes Metadata (`[params.feed]`):** Updated this critical section so if you submit your RSS feed to directories, they display the correct title, author, and description.
-4. **Author/Host:** Replaced the hosts with a single profile for "Mark Beachill."
-5. **Cleaned Up Links/Social:** Commented out the Arrested DevOps social media and external links. You can add your own social handles in here later by removing the `#` symbol.
-
-### Your Updated `hugo.toml`
-
-Copy everything in the code block below, go to your repository, click the pencil icon on `hugo.toml`, select all the old text, paste this new text over it, and commit the changes!
-
-```toml
 baseURL = "https://concreteandclouds.github.io/"
 languageCode = "en-gb"
 title = "Concrete and Clouds"
@@ -181,4 +164,3 @@ disqusShortname = ""
         name = "Concrete and Clouds"
         url = "https://concreteandclouds.github.io/"
 
-```
