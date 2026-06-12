@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+{{/* ====================================================================
+     Custom homepage for Concrete and Clouds
+     Place this file at:  layouts/index.html  (in YOUR site root,
+     NOT inside themes/castanet). Hugo will use it instead of the
+     theme's homepage automatically.
+     ==================================================================== */}}
+
+<header class="home_hero">
+  <h1 class="home_title">{{ .Site.Title }}</h1>
+
+  {{ with .Site.Params.strapline }}
+    <p class="strapline">{{ . | markdownify }}</p>
+  {{ end }}
+
+  {{ with .Site.Params.listen_on }}
+    <div class="listen_on">
+      <span class="listen_on_label">Listen on:</span>
+      <ul class="listen_on_list">
+        {{ range . }}
+          <li>
+            <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
+              {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+              <span>{{ .name }}</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+</header>
+
+<section class="episode_list">
+  {{ $eps := where (where site.RegularPages "Type" "in" site.Params.mainSections) ".Params.upcoming" "!=" true }}
+  {{ $paginator := .Paginate $eps.ByDate.Reverse }}
+
+  {{ range $paginator.Pages }}
+    {{ $page := . }}
+    {{ $truncate := int (.Params.truncate | default ($.Site.Params.truncate | default "300")) }}
+
+    <article class="episode_item">
+
+      {{ with .Params.episode_image }}
+        <a class="episode_item_thumb" href="{{ $page.Permalink }}">
+          <img src="{{ . | absURL }}" alt="{{ $page.Title }}" loading="lazy" />
+        </a>
+      {{ end }}
+
+      <div class="episode_item_body">
+        <small class="episode_item_date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</small>
+        <h2 class="episode_item_title">
+          <a href="{{ .Permalink }}">{{ title .Title }}</a>
+        </h2>
+        <p class="episode_item_summary">
+          {{ .Description | markdownify | truncate $truncate " " }}
+          <a class="episode_item_more" href="{{ .Permalink }}">Read more</a>
+        </p>
+      </div>
+
+    </article>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
+</section>
+
+{{ end }}

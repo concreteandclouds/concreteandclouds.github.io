@@ -64,6 +64,10 @@ description = "Discussing politics and society by bringing the real and the abst
 # media_prefix = "" 
 disqusShortname = ""
 custom_css = ["css/custom.css"]
+strapline = "Discussing politics and society by bringing the real and the abstract together"
+  truncate = "300"   # characters of episode summary shown on the homepage
+
+
 
 # ... other settings
   relativeURLs = false
@@ -134,4 +138,39 @@ custom_css = ["css/custom.css"]
       [params.links.cwc]
         name = "Concrete and Clouds"
         url = "https://concreteandclouds.github.io/"
+
+[[params.listen_on]]
+  name = "Apple Podcasts"
+  url  = "https://podcasts.apple.com/gb/podcast/concrete-and-clouds/id1827839997"
+  icon = "fa fa-podcast"
+
+[[params.listen_on]]
+  name = "Spotify"
+  url  = "https://open.spotify.com/show/4aXTZxpJ3gDx8r3qu3UUBQ"
+  icon = "fab fa-spotify"
+
+[[params.listen_on]]
+  name = "Amazon Music"
+  url  = "https://music.amazon.com/podcasts/df2225fa-f250-4162-893c-99a1d0237e6f"
+  icon = "fab fa-amazon"
+
+[[params.listen_on]]
+  name = "iHeartRadio"
+  url  = "https://iheart.com/podcast/286931272"
+  icon = "fa fa-broadcast-tower"
+
+[[params.listen_on]]
+  name = "PlayerFM"
+  url  = "https://player.fm/series/3678698"
+  icon = "fa fa-play-circle"
+
+[[params.listen_on]]
+  name = "Podchaser"
+  url  = "https://www.podchaser.com/podcasts/concrete-and-clouds-6161319"
+  icon = "fa fa-headphones"
+
+[[params.listen_on]]
+  name = "RSS"
+  url  = "/episode/index.xml"
+  icon = "fa fa-rss"
 
