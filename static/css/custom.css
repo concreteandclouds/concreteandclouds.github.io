@@ -340,3 +340,145 @@ audio {
     padding: 2rem 0 0 0 !important;
   }
 }
+
+/* =========================================================================
+   v3 — CUSTOM HOMEPAGE (layouts/index.html)
+   ========================================================================= */
+
+/* Hero: show title + strapline + listen-on row */
+.home_hero {
+  text-align: center;
+  padding: 1.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--cc-line);
+  margin-bottom: 1rem;
+}
+
+.home_title {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 0 0 0.5rem;
+}
+
+.strapline {
+  font-family: var(--cc-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--cc-muted);
+  max-width: 34em;
+  margin: 0 auto 1.75rem;
+}
+
+/* Listen on: row of platform buttons */
+.listen_on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.listen_on_label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cc-muted);
+  margin-right: 0.25rem;
+}
+
+.listen_on_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listen_on_list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--cc-surface);
+  border: 1px solid var(--cc-line);
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--cc-ink);
+  text-decoration: none;
+}
+
+.listen_on_list a:hover {
+  background: var(--cc-ink);
+  border-color: var(--cc-ink);
+  color: #fff;
+}
+
+.listen_on_list i {
+  font-size: 1rem;
+}
+
+/* Episode list: simple rows, optional thumbnail */
+.episode_list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.episode_item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--cc-line);
+}
+
+.episode_item_thumb img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.episode_item_date {
+  margin-bottom: 0.3rem;
+}
+
+.episode_item_title {
+  font-size: 1.45rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+  text-transform: none;
+}
+
+.episode_item_title a {
+  color: var(--cc-ink);
+  text-decoration: none;
+}
+
+.episode_item_title a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--cc-line);
+}
+
+.episode_item_summary {
+  font-size: 1rem;
+  color: #3c3f45;
+  margin: 0;
+}
+
+.episode_item_more {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 575px) {
+  .episode_item {
+    flex-direction: column;
+  }
+  .episode_item_thumb img {
+    width: 100%;
+    height: auto;
+  }
+}
