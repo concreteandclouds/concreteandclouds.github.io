@@ -30,17 +30,17 @@ about = "/:contentbasename/"
     identifier = "about"
     url = "/about"
 
-[[Menu.Main]]
-    name = "Podcasts"
-    identifier = "podcasts"
-    url = "/books"
-    parent = "resources"
+# [[Menu.Main]]
+#     name = "Podcasts"
+#     identifier = "podcasts"
+#     url = "/books"
+#     parent = "resources"
 
 [params]
 googleAnalytics_UA = ""
 mainSections = ["episode"]
 episode_number_style  = "brackets"
-episode_number_prefix = "CWC"
+episode_number_prefix = ""
 site_theme = "grey"
 # site_layout = "grid"
 site_layout = "list"
