@@ -10,14 +10,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap');
 
 :root {
-  --cc-bg:        #faf9f7;
-  --cc-surface:   #ffffff;
-  --cc-ink:       #1f2125;
-  --cc-muted:     #6b6f76;
-  --cc-line:      #e6e3de;
-  --cc-accent:    #2a2d34;
-  --cc-serif:     'Newsreader', Georgia, serif;
-  --cc-sans:      'Inter', -apple-system, 'Segoe UI', sans-serif;
+  --cc-bg:          #f6f8fb;   /* cool off-white page */
+  --cc-surface:     #ffffff;
+  --cc-ink:         #1e2530;
+  --cc-muted:       #5f6b7a;
+  --cc-line:        #dde5ee;   /* blue-grey hairlines */
+  --cc-accent:      #46698f;   /* soft steel blue — links, accents */
+  --cc-accent-deep: #2f4a68;   /* hover / buttons */
+  --cc-accent-soft: #e9f0f7;   /* tinted panels: header, hero */
+  --cc-serif:       'Newsreader', Georgia, serif;
+  --cc-sans:        'Inter', -apple-system, 'Segoe UI', sans-serif;
 }
 
 /* ---- Page shell -------------------------------------------------------- */
@@ -43,7 +45,7 @@ body {
 
 /* ---- Navigation -------------------------------------------------------- */
 .navbar.fixed-top {
-  background: #faf9f7 !important;  /* solid, so nothing shows through */
+  background: var(--cc-accent-soft) !important;  /* soft blue header band */
   border-bottom: 1px solid var(--cc-line);
   box-shadow: none;
   padding-top: 0.9rem;
@@ -247,8 +249,8 @@ h3 {
 }
 
 .subscribe_buttons .btn:hover {
-  background: var(--cc-ink);
-  border-color: var(--cc-ink);
+  background: var(--cc-accent-deep);
+  border-color: var(--cc-accent-deep);
   color: #fff;
 }
 
@@ -292,8 +294,8 @@ audio {
 }
 
 .page-link:hover {
-  background: var(--cc-ink);
-  border-color: var(--cc-ink);
+  background: var(--cc-accent-deep);
+  border-color: var(--cc-accent-deep);
   color: #fff;
 }
 
@@ -331,7 +333,7 @@ audio {
   }
 
   .navbar-collapse {
-    background: var(--cc-bg);
+    background: var(--cc-accent-soft);
     border-radius: 0 0 12px 12px;
     padding: 0.5rem 0 1rem;
   }
@@ -410,8 +412,8 @@ audio {
 }
 
 .listen_on_list a:hover {
-  background: var(--cc-ink);
-  border-color: var(--cc-ink);
+  background: var(--cc-accent-deep);
+  border-color: var(--cc-accent-deep);
   color: #fff;
 }
 
@@ -481,4 +483,79 @@ audio {
     width: 100%;
     height: auto;
   }
+}
+
+/* =========================================================================
+   v4 — SOFT BLUE COLOUR PASS
+   ========================================================================= */
+
+/* Homepage hero becomes a soft blue panel */
+.home_hero {
+  background: var(--cc-accent-soft);
+  border: 1px solid var(--cc-line);
+  border-radius: 14px;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.strapline {
+  color: var(--cc-accent-deep);
+}
+
+/* Dates and kickers pick up the accent */
+.episode_item_date,
+h1 + small,
+.hero_container > div > h2 {
+  color: var(--cc-accent);
+}
+
+/* Headings get a whisper of blue-black */
+h1, .episode_item_title a, .home_title {
+  color: var(--cc-ink);
+}
+
+/* Episode-page title underline accent */
+h1 {
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--cc-accent-soft);
+}
+
+/* Read more links */
+.episode_item_more {
+  color: var(--cc-accent);
+}
+
+/* Listen-on icons tinted */
+.listen_on_list i {
+  color: var(--cc-accent);
+}
+
+.listen_on_list a:hover i {
+  color: #fff;
+}
+
+/* Audio player row sits on a soft panel so it reads as 'the player' */
+.player_row {
+  background: var(--cc-accent-soft);
+  border: 1px solid var(--cc-line);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+/* Footer tint matches header */
+.navbar_footer {
+  background: var(--cc-accent-soft) !important;
+  border-top: 1px solid var(--cc-line);
+}
+
+.footer_copyright,
+.footer_copyright > a {
+  color: var(--cc-accent-deep) !important;
+}
+
+/* Bigger artwork on episode pages (pairs with col-md-4 in single.html) */
+.episode_image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(47, 74, 104, 0.14);
 }
