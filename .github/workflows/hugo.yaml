@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 # This tells GitHub to run the action every time you push to the 'main' branch
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 
 # Sets permissions so the robot can actually publish the site
